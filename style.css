@@ -76,7 +76,8 @@ footer .contents .link-boxes .box {
 }
 .link-boxes .input-box input {
   height: 40px;
-  width: calc(100% + 55px);
+  /* width: calc(100% + 55px); */
+  /* width: auto; */
   outline: none;
   border: 2px solid #fff;
   background: #fff;
@@ -131,6 +132,7 @@ footer::before {
 @media (max-width: 900px) {
   footer .contents .link-boxes {
     flex-wrap: wrap;
+    /* display: grid;  */
   }
   footer .contents .link-boxes .input-box {
     width: 40%;
@@ -169,12 +171,15 @@ footer::before {
     flex-direction: column;
   }
   .contents .top .social-media {
-    margin-top: 16px;
+    margin-bottom: 20px;
   }
   footer .contents .link-boxes .box {
     width: calc(100% / 2 - 10px);
   }
   footer .contents .link-boxes .input-box {
     width: 100%;
+  }
+  footer .contents .top section {
+    width: 125%;
   }
 }
